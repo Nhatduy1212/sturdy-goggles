@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Product Category</title>
+    <script src="https://kit.fontawesome.com/ad98048fa9.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+        article {
+            background-color: whitesmoke;
+            width: inherit;
+            padding: 5px;
+        }
+
+        #productCat {
+            font-family: Arial;
+            font-size: 28px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        #product-label {
+            max-width: 100px;
+            max-height: 30px;
+            float: right;
+            position: relative;
+            top: 5px;
+            right: 5px;
+        }
+
+        #product-table {
+            width: 1200px;
+            border-spacing: 15px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #product-td {
+            background-color: white;
+            width: 25%;
+            border: 1px solid white;
+            border-radius: 8px;
+            border-spacing: 20px;
+        }
+
+        #product-img {
+            max-width: 250px;
+            max-height: 300px;
+        }
+
+        #product-name, #newPrice, #oldPrice, #discount {
+            font-family: Arial;
+        }
+
+        #product-name {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        #newPrice, #oldPrice, #discount {
+            display: inline;
+        }
+
+        #newPrice {
+            color: blue;
+            font-weight: bold;
+            font-size: 11px;
+        }
+
+        #oldPrice, #discount {
+            color: lightgrey;
+            font-size: 10px;
+        }
+
+        #oldPrice {
+            text-decoration: line-through;
+        }
+        .pager ul {
+            text-align: center;
+        }
+
+        .pager li {
+            display: inline-block;
+            border:1px solid white;
+            border-radius:5px;
+            margin: 5px 5px 5px 5px;
+            padding: 7px;
+            padding-left:7px;
+            padding-right:7px;
+            background-color:white;
+        }
+        #pager-1{
+            background-color:blue;
+        }
+        .pager a{
+            text-decoration:none;
+            font-family:Arial;
+            font-size:14px;
+        }
+        #pager-1 a{
+            color:white;
+        }
+        #pager-2 a {
+            color: black;
+        }
+        #pager-next a{
+            color:lightgrey;
+        }
+        .pager li:hover{
+            background-color:grey;
+        }
+        .homelist{
+            background-color:white;
+        }
+        .homelist ul{
+            text-align:left;
+            margin-left:100px;
+            word-spacing:5px;
+            padding-top:5px;
+        }
+        .homelist li{
+            display:inline;
+            vertical-align:middle;
+        }
+        .homelist a, i{
+            font-family:Arial;
+            font-size:13px;
+            color: black;
+        }
+        .homelist a{
+            text-decoration:none;
+        }
+        .typelist{
+            background-color:whitesmoke;
+            width:100%;
+            height:60px;
+        }
+        .iPhone-list{
+            margin-left:100px;
+            width:70%;
+            float:left;
+        }
+        .compare{
+            margin-right:-190px;
+            width:30%;
+            float:left;
+        }
+        .iPhone-list ul {
+            text-align: left;
+            padding-top: 5px;
+        }
+        .iPhone-list li {
+            display: inline;
+            vertical-align: middle;
+            font-family:Arial;
+            font-size:18px;
+            padding-left:5px;
+        }
+        .compare ul {
+            border:1px solid white;
+            border-radius:8px;
+            background-color:white;
+        }
+        .compare li {
+            display: inline-block;
+            color: lightgrey;
+            vertical-align: middle;
+            font-family: Arial;
+            font-size: 16px;
+        }
+        #compare-pic{
+            width:26px;
+            height:auto;
+            margin-right:15px;
+        }
+    </style>
+</head>
+<body>
+    <section class="Slider">
+    </section>
+    <div class="homelist">
+        <ul>
+            <li><a href="#">Trang chủ </a> </li>
+            <li><i class="fa-thin fa-angle-right fa"></i></li>
+            <li><a href="#">iPhone</a></li>
+        </ul>
+    </div>
+    <div class="typelist">
+        <div class="iPhone-list">
+            <ul>
+                <li id="all">Tất cả</li>
+                <li>iPhone 15 series</li>
+                <li>iPhone 14 series</li>
+                <li>iPhone 13 series</li>
+                <li>iPhone 12 series</li>
+                <li>iPhone 11 series</li>
+                <li>iPhone SE</li>
+            </ul>
+        </div>
+        <div class="compare">
+            <ul>
+                <li><img id="compare-pic" src="https://shopdunk.com/images//uploaded-source/icon//comparison.png" /></li>
+                <li><p>So sánh iPhone</p><li>
+            </ul>
+        </div>
+    </div>
+    <article class="PC">
+        <h1 id="productCat">iPhone</h1>
+        <div class="product">
+            <table id="product-table">
+                <tr>
+                    <td id="product-td">
+                        <img id="product-label" src="https://shopdunk.com/images/uploaded/icon/nhan-coc.png" />
+                        <img id="product-img" src="https://shopdunk.com/images/thumbs/0020321_iphone-15-256gb_240.webp" />
+                        <p id="product-name">iPhone 15 256GB</p>
+                        <p id="newPrice">24.490.000</p>
+                        <p id="oldPrice">27.990.000</p>
+                        <p id="discount">-12%</p>
+                    </td>
+                    <td id="product-td">
+                        <img id="product-label" src="https://shopdunk.com/images/uploaded/icon/nhan-coc.png" />
+                        <img id="product-img" src="https://shopdunk.com/images/thumbs/0020311_iphone-15-pro-max-256gb_240.webp" />
+                        <p id="product-name">iPhone 15 Pro Max 256GB</p>
+                        <p id="newPrice">34.290.000</p>
+                        <p id="oldPrice">37.990.000</p>
+                        <p id="discount">-9%</p>
+                    </td>
+                    <td id="product-td">
+                        <img id="product-label" src="https://shopdunk.com/images/uploaded/icon/nhan-coc.png" />
+                        <img id="product-img" src="https://shopdunk.com/images/thumbs/0020317_iphone-15-plus-128gb_240.webp" />
+                        <p id="product-name">Iphone 15 Plus 128GB</p>
+                        <p id="newPrice">51.490.000</p>
+                        <p id="oldPrice">27.990.000</p>
+                        <p id="discount">-8%</p>
+                    </td>
+                    <td id="product-td">
+                        <img id="product-label" src="https://shopdunk.com/images/uploaded/icon/nhan-coc.png" />
+                        <img id="product-img" src="https://shopdunk.com/images/thumbs/0020313_iphone-15-pro-128gb_240.webp" />
+                        <p id="product-name">iPhone 15 Pro 128GB</p>
+                        <p id="newPrice">28.290.000</p>
+                        <p id="oldPrice">30.990.000</p>
+                        <p id="discount">-8%</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="product-td">
+                        <img id="product-label" src="https://shopdunk.com/images/uploaded/icon/nhan-coc.png" />
+                        <img id="product-img" src="https://shopdunk.com/images/thumbs/0020320_iphone-15-128gb_240.webp" />
+                        <p id="product-name">iPhone 15 128GB</p>
+                        <p id="newPrice">21.490.000</p>
+                        <p id="oldPrice">24.990.000</p>
+                        <p id="discount">-14%</p>
+                    </td>
+                    <td id="product-td">
+                        <img id="product-img" src="https://shopdunk.com/images/thumbs/0007808_iphone-14-pro-max-128gb_240.png" />
+                        <p id="product-name">iPhone 14 Pro Max 128GB</p>
+                        <p id="newPrice">26.150.000</p>
+                        <p id="oldPrice">34.990.000</p>
+                        <p id="discount">-25%</p>
+                    </td>
+                    <td id="product-td">
+                        <img id="product-img" src="https://shopdunk.com/images/thumbs/0008734_iphone-14-pro-128gb_240.png" />
+                        <p id="product-name">Iphone 14 Pro 128GB</p>
+                        <p id="newPrice">23.890.000</p>
+                        <p id="oldPrice">30.990.000</p>
+                        <p id="discount">-22%</p>
+                    </td>
+                    <td id="product-td">
+                        <img id="product-img" src="https://shopdunk.com/images/thumbs/0009495_iphone-14-plus-128gb_240.png" />
+                        <p id="product-name">iPhone 14 Plus 128GB</p>
+                        <p id="newPrice">21.190.000</p>
+                        <p id="oldPrice">27.990.000</p>
+                        <p id="discount">-24%</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="product-td">
+                        <img id="product-img" src="https://shopdunk.com/images/thumbs/0009181_iphone-14-128gb_240.png" />
+                        <p id="product-name">iPhone 14 128GB</p>
+                        <p id="newPrice">18.690.000</p>
+                        <p id="oldPrice">24.990.000</p>
+                        <p id="discount">-25%</p>
+                    </td>
+                    <td id="product-td">
+                        <img id="product-img" src="https://shopdunk.com/images/thumbs/0012164_iphone-11-64gb_240.webp" />
+                        <p id="product-name">iPhone 11 64GB</p>
+                        <p id="newPrice">10.490.000</p>
+                        <p id="oldPrice">14.990.000</p>
+                        <p id="discount">-30%</p>
+                    </td>
+                    <td id="product-td">
+                        <img id="product-img" src="https://shopdunk.com/images/thumbs/0012165_iphone-11-128gb_240.jpeg" />
+                        <p id="product-name">Iphone 11 128GB</p>
+                        <p id="newPrice">11.890.000</p>
+                        <p id="oldPrice">16.990.000</p>
+                        <p id="discount">-30%</p>
+                    </td>
+                    <td id="product-td">
+                        <img id="product-img" src="https://shopdunk.com/images/thumbs/0000596_iphone-13_240.png" />
+                        <p id="product-name">iPhone 13</p>
+                        <p id="newPrice">16.190.000</p>
+                        <p id="oldPrice">24.990.000</p>
+                        <p id="discount">-35%</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="pager">
+            <ul>
+                <li id="pager-1">
+                    <a href="#"><b>1</b></a>
+                </li>
+                <li id="pager-2">
+                    <a href="#"><b>2</b></a>
+                </li>
+                <li id="pager-next">
+                    <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                </li>
+            </ul>
+        </div>
+    </article>
+</body>
+</html>
